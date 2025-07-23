@@ -18,13 +18,11 @@ Open Spoonme Live
     [Documentation]    방송 화면에서 채팅 버튼 출력 확인
     Open Spoonme Live
     
-    # 채팅 버튼 표시 확인 (다양한 로케이터 시도)
-    Run Keyword And Ignore Error    Wait Until Element Is Visible    xpath=//android.view.View[@content-desc="chat button"]    10s
-    Run Keyword And Ignore Error    Wait Until Element Is Visible    xpath=//android.widget.Button[contains(@text, '채팅')]    10s
-    Run Keyword And Ignore Error    Wait Until Element Is Visible    xpath=//android.view.View[contains(@text, '채팅')]    10s
+    # 채팅 버튼 표시 확인 
+    Run Keyword And Ignore Error    Wait Until Element Is Visible    xpath=//android.widget.ImageView[@content-desc="chat button"]    10s
     
-    ${chat_button_visible}=    Run Keyword And Return Status    Element Should Be Visible    xpath=//android.view.View[@content-desc="chat button"]
-    Run Keyword If    not ${chat_button_visible}    Element Should Be Visible    xpath=//android.widget.Button[contains(@text, '채팅')]
+    ${chat_button_visible}=    Run Keyword And Return Status    Element Should Be Visible    xpath=//android.widget.ImageView[@content-desc="chat button"] 
+    Run Keyword If    not ${chat_button_visible}    Element Should Be Visible    xpath=//android.widget.ImageView[@content-desc="chat button"] 
     
     Close Application
 
