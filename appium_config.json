@@ -1,0 +1,19 @@
+{
+    "server": {
+        "address": "127.0.0.1",
+        "port": 4723,
+        "log_level": "debug",
+        "log_timestamp": true,
+        "allow_insecure": ["adb_shell"]
+    },
+    "capabilities": {
+        "platformName": "Android",
+        "deviceName": "R3CW80550BN",
+        "appPackage": "co.spoonme",
+        "appActivity": ".ui.main.MainActivity",
+        "automationName": "UiAutomator2",
+        "noReset": true,
+        "fullReset": false,
+        "newCommandTimeout": 120
+    }
+} 

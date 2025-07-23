@@ -1,0 +1,11 @@
+{
+    "remote_url": "http://localhost:4723/wd/hub",
+    "desired_capabilities": {
+        "platformName": "Android",
+        "deviceName": "emulator-5554",
+        "appPackage": "co.spoonme",
+        "appActivity": ".MainActivity",
+        "automationName": "UiAutomator2",
+        "noReset": true
+    }
+} 
