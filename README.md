@@ -1,8 +1,3 @@
-# Spoon2 Mobile App Automation Test Project
-
-## 프로젝트 개요
-모바일 애플리케이션의 UI 자동화 테스트를 위한 Appium 및 Robot Framework 기반 테스트 스위트입니다.
-
 ## 사전 요구사항
 - Python 3.8+
 - pip
