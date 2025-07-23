@@ -1,6 +1,0 @@
-2025-07-23 05:48:57:415 [Appium] Welcome to Appium v2.19.0 (REV 47ef1a3b0b742a78be35c016df6a0279d6035ebb)
-2025-07-23 05:48:57:420 [Appium] The autodetected Appium home path: /Users/ahram/.appium
-2025-07-23 05:48:57:421 [Appium] Attempting to load driver uiautomator2...
-2025-07-23 05:48:57:424 [Appium] Requiring driver at /Users/ahram/.appium/node_modules/appium-uiautomator2-driver/build/index.js
-2025-07-23 05:48:57:845 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.423s
-2025-07-23 05:48:57:854 [HTTP] Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.

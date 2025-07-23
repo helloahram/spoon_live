@@ -1,6 +1,4 @@
 robotframework==6.1.1
 Appium-Python-Client==2.10.1
-robotframework-appiumlibrary==1.2.2
 selenium==4.10.0
 pytest==7.3.1
-allure-pytest==2.13.2
