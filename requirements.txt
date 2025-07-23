@@ -1,4 +1,25 @@
+# 기본 테스트 프레임워크
 robotframework==6.1.1
+robotframework-appiumlibrary==1.1.7
+
+# 모바일 자동화 및 웹 드라이버
 Appium-Python-Client==2.10.1
 selenium==4.10.0
+
+# 테스트 및 로깅
 pytest==7.3.1
+allure-pytest==2.13.2
+logging==0.5.1.2
+
+# 알림 및 통합
+requests==2.31.0
+slackclient==2.9.4
+
+# 추가 유틸리티
+python-dotenv==1.0.0
+xmltodict==0.13.0
+
+# 개발 및 디버깅 도구
+ipdb==0.13.13
+black==23.3.0
+flake8==6.0.0
