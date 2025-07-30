@@ -11,4 +11,8 @@ __pycache__/
 # MAC OS 시스템 파일 
 .DS_Store
 
+# 레포트
+*.xml
+*.html
+
 send_slack.py

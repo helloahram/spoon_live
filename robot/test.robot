@@ -2,6 +2,9 @@
 Library    AppiumLibrary
 Library    Collections
 
+Test Setup       Open Spoonme Live
+Test Teardown    Close Application
+
 *** Variables ***
 ${REMOTE_URL}    http://localhost:4723
 ${PLATFORM}      Android
@@ -26,32 +29,15 @@ Open Spoonme Live
 *** Test Cases ***
 채팅 버튼 출력
     [Documentation]    방송 화면에서 채팅 버튼 출력 확인
-    Open Spoonme Live
-    
-    # 채팅 버튼 표시 확인 
-    Run Keyword And Ignore Error    Wait Until Element Is Visible    ${CHAT_BUTTON}    10s
-    
-    ${chat_button_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${CHAT_BUTTON}
-    Run Keyword If    not ${chat_button_visible}    Element Should Be Visible    ${CHAT_BUTTON}
-    
-    Close Application
+    Wait Until Element Is Visible    ${CHAT_BUTTON}    10s
+    Element Should Be Visible        ${CHAT_BUTTON}
 
 하트 버튼 출력
     [Documentation]    방송 화면에서 하트(좋아요) 버튼 출력 확인
-    Open Spoonme Live
-    
-    # 하트 버튼 표시 확인
-    Wait Until Element Is Visible    ${HEART_BUTTON}
-    Element Should Be Visible    ${HEART_BUTTON}
-    
-    Close Application
+    Wait Until Element Is Visible    ${HEART_BUTTON}    10s
+    Element Should Be Visible        ${HEART_BUTTON}
 
 하트 버튼 선택
     [Documentation]    방송 화면에서 하트(좋아요) 버튼 선택 확인
-    Open Spoonme Live
-    
-    # 하트 버튼 선택
-    Wait Until Element Is Visible    ${HEART_BUTTON}
-    Click Element    ${HEART_BUTTON}
-    
-    Close Application
+    Wait Until Element Is Visible    ${HEART_BUTTON}    10s
+    Click Element                    ${HEART_BUTTON}

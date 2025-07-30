@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.11 on darwin)" generated="2025-07-30T13:58:20.727021" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.11.11 on darwin)" generated="2025-07-30T14:13:58.300539" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="/Users/ahram/Desktop/아람/Resume/이직/7_스푼랩스/Spoon2/robot/test.robot">
-<test id="s1-t1" name="채팅 버튼 출력" line="27">
-<kw name="Open Spoonme Live">
+<test id="s1-t1" name="채팅 버튼 출력" line="30">
+<kw name="Open Spoonme Live" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
 <arg>platformName=${PLATFORM}</arg>
@@ -18,54 +18,32 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-07-30T13:58:20.826922" elapsed="3.301555"/>
+<status status="PASS" start="2025-07-30T14:13:58.405620" elapsed="3.594083"/>
 </kw>
-<status status="PASS" start="2025-07-30T13:58:20.826537" elapsed="3.302250"/>
+<status status="PASS" start="2025-07-30T14:13:58.405225" elapsed="3.594931"/>
 </kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-07-30T13:58:25.975420" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="chat button"]</msg>
+<msg time="2025-07-30T14:14:04.799052" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="chat button"]</msg>
 <arg>${CHAT_BUTTON}</arg>
 <arg>10s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-07-30T13:58:24.129637" elapsed="1.847528"/>
+<status status="PASS" start="2025-07-30T14:14:02.000930" elapsed="2.798291"/>
 </kw>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${CHAT_BUTTON}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-07-30T13:58:24.129283" elapsed="1.848642"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-07-30T13:58:26.774295" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="chat button"]</msg>
+<msg time="2025-07-30T14:14:05.891992" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="chat button"]</msg>
 <arg>${CHAT_BUTTON}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-07-30T13:58:25.981853" elapsed="0.792861"/>
+<status status="PASS" start="2025-07-30T14:14:04.799674" elapsed="1.092435"/>
 </kw>
-<msg time="2025-07-30T13:58:26.775393" level="INFO">${chat_button_visible} = True</msg>
-<var>${chat_button_visible}</var>
-<arg>Element Should Be Visible</arg>
-<arg>${CHAT_BUTTON}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-07-30T13:58:25.980403" elapsed="0.795091"/>
-</kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<arg>not ${chat_button_visible}</arg>
-<arg>Element Should Be Visible</arg>
-<arg>${CHAT_BUTTON}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-07-30T13:58:26.776043" elapsed="0.000750"/>
-</kw>
-<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2025-07-30T13:58:26.777405" elapsed="0.420526"/>
+<status status="PASS" start="2025-07-30T14:14:05.892559" elapsed="0.500346"/>
 </kw>
 <doc>방송 화면에서 채팅 버튼 출력 확인</doc>
-<status status="PASS" start="2025-07-30T13:58:20.825872" elapsed="6.372641"/>
+<status status="PASS" start="2025-07-30T14:13:58.404558" elapsed="7.988612"/>
 </test>
-<test id="s1-t2" name="하트 버튼 출력" line="39">
-<kw name="Open Spoonme Live">
+<test id="s1-t2" name="하트 버튼 출력" line="35">
+<kw name="Open Spoonme Live" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
 <arg>platformName=${PLATFORM}</arg>
@@ -81,31 +59,32 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-07-30T13:58:27.201804" elapsed="3.259598"/>
+<status status="PASS" start="2025-07-30T14:14:06.396325" elapsed="3.535004"/>
 </kw>
-<status status="PASS" start="2025-07-30T13:58:27.201146" elapsed="3.260468"/>
+<status status="PASS" start="2025-07-30T14:14:06.395627" elapsed="3.535997"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-07-30T13:58:32.792420" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
+<msg time="2025-07-30T14:14:12.780739" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
 <arg>${HEART_BUTTON}</arg>
+<arg>10s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-07-30T13:58:30.461971" elapsed="2.330609"/>
+<status status="PASS" start="2025-07-30T14:14:09.932057" elapsed="2.849154"/>
 </kw>
 <kw name="Element Should Be Visible" owner="AppiumLibrary">
-<msg time="2025-07-30T13:58:33.777074" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
+<msg time="2025-07-30T14:14:13.878655" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
 <arg>${HEART_BUTTON}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<status status="PASS" start="2025-07-30T13:58:32.792939" elapsed="0.984232"/>
+<status status="PASS" start="2025-07-30T14:14:12.782373" elapsed="1.096573"/>
 </kw>
-<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2025-07-30T13:58:33.777379" elapsed="0.456626"/>
+<status status="PASS" start="2025-07-30T14:14:13.880191" elapsed="0.457580"/>
 </kw>
 <doc>방송 화면에서 하트(좋아요) 버튼 출력 확인</doc>
-<status status="PASS" start="2025-07-30T13:58:27.198920" elapsed="7.035556"/>
+<status status="PASS" start="2025-07-30T14:14:06.393808" elapsed="7.944314"/>
 </test>
-<test id="s1-t3" name="하트 버튼 선택" line="49">
-<kw name="Open Spoonme Live">
+<test id="s1-t3" name="하트 버튼 선택" line="40">
+<kw name="Open Spoonme Live" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
 <arg>platformName=${PLATFORM}</arg>
@@ -121,31 +100,32 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-07-30T13:58:34.237975" elapsed="3.362692"/>
+<status status="PASS" start="2025-07-30T14:14:14.341701" elapsed="3.611594"/>
 </kw>
-<status status="PASS" start="2025-07-30T13:58:34.237432" elapsed="3.363476"/>
+<status status="PASS" start="2025-07-30T14:14:14.341155" elapsed="3.612488"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-07-30T13:58:39.878478" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
+<msg time="2025-07-30T14:14:20.878626" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
 <arg>${HEART_BUTTON}</arg>
+<arg>10s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-07-30T13:58:37.601302" elapsed="2.277430"/>
+<status status="PASS" start="2025-07-30T14:14:17.954170" elapsed="2.924573"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-07-30T13:58:39.881685" level="INFO">Clicking element 'xpath=//android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]'.</msg>
-<msg time="2025-07-30T13:58:51.072176" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
+<msg time="2025-07-30T14:14:20.880624" level="INFO">Clicking element 'xpath=//android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]'.</msg>
+<msg time="2025-07-30T14:14:32.966490" level="INFO">xpath criteria: //android.widget.ProgressBar[@resource-id="co.spoonme:id/prog_heart"]</msg>
 <arg>${HEART_BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-07-30T13:58:39.879332" elapsed="11.193119"/>
+<status status="PASS" start="2025-07-30T14:14:20.879019" elapsed="12.087559"/>
 </kw>
-<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2025-07-30T13:58:51.073043" elapsed="0.438146"/>
+<status status="PASS" start="2025-07-30T14:14:32.966850" elapsed="0.480835"/>
 </kw>
 <doc>방송 화면에서 하트(좋아요) 버튼 선택 확인</doc>
-<status status="PASS" start="2025-07-30T13:58:34.235320" elapsed="17.276264"/>
+<status status="PASS" start="2025-07-30T14:14:14.338839" elapsed="19.110605"/>
 </test>
-<status status="PASS" start="2025-07-30T13:58:20.727870" elapsed="30.785422"/>
+<status status="PASS" start="2025-07-30T14:13:58.301289" elapsed="35.155567"/>
 </suite>
 <statistics>
 <total>
