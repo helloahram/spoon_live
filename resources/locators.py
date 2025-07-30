@@ -12,6 +12,7 @@ class LivePageLocators:
     # 채팅 버튼 로케이터들
     CHAT_BUTTON = [
         (AppiumBy.XPATH, "//android.view.View[@content-desc='chat button']"),
+        (AppiumBy.XPATH, "//android.widget.ImageView[@content-desc='chat button']"),
         (AppiumBy.XPATH, "//android.widget.Button[contains(@text, '채팅')]"),
         (AppiumBy.XPATH, "//android.view.View[contains(@text, '채팅')]")
     ]
