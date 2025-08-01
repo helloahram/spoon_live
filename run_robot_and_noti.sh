@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# PYTHONPATH 설정 (현재 디렉토리를 모듈 경로로 추가)
+export PYTHONPATH=$(pwd)
+
 echo "[1] Robot 테스트 실행 중"
 robot robot/test.robot
 
