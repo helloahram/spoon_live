@@ -4,10 +4,12 @@ Library    ../keywords/live_keywords.py    WITH NAME    Keyword
 
 *** Keywords ***
 Initialize App
-    Start App
+    [Documentation]      각 Test Case 수행 시 환경 초기화를 위함
+    Keyword.Start App
 
 Close App
-    Quit App
+    [Documentation]      각 Test Case 수행 시 환경 초기화를 위함
+    Keyword.Quit App
 
 Check Chat Button
     ${visible}=    Keyword.Is Chat Button Visible

@@ -1,5 +1,5 @@
 {
-    "remote_url": "http://localhost:4723/wd/hub",
+    "remote_url": "http://localhost:4723",
     "desired_capabilities": {
         "platformName": "Android",
         "deviceName": "emulator-5554",

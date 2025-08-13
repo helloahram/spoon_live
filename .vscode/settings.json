@@ -1,0 +1,13 @@
+{
+    // Python 인터프리터를 .venv 로 지정
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+
+    // Robot Framework 실행도 같은 환경으로
+    "robot.python.executable": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "robot.language-server.python": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+
+    // PythonPath 에 프로젝트 루트를 추가 (pages, keywords 임포트 문제 해결)
+    "robot.pythonpath": [
+        "${workspaceFolder}"
+    ]
+}

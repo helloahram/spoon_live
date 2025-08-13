@@ -1,153 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.11 on darwin)" generated="2025-08-01T16:57:38.991244" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.11.11 on darwin)" generated="2025-08-13T17:10:04.793043" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="/Users/ahram/Desktop/아람/Resume/이직/7_스푼랩스/Spoon2/robot/test.robot">
 <test id="s1-t1" name="Check Chat Button Is Visible" line="8">
 <kw name="Initialize App" owner="live_access" type="SETUP">
 <kw name="Start App" owner="Keyword">
-<msg time="2025-08-01T16:57:42.716960" level="INFO">Appium 드라이버 시작 성공</msg>
+<msg time="2025-08-13T17:10:10.657761" level="INFO">Appium 드라이버 시작 성공</msg>
 <doc>Appium 드라이버 시작</doc>
-<status status="PASS" start="2025-08-01T16:57:39.100827" elapsed="3.616614"/>
+<status status="PASS" start="2025-08-13T17:10:04.896902" elapsed="5.762887"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:39.100555" elapsed="3.617203"/>
+<doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
+<status status="PASS" start="2025-08-13T17:10:04.896734" elapsed="5.763715"/>
 </kw>
 <kw name="Check Chat Button" owner="live_access">
 <kw name="Is Chat Button Visible" owner="Keyword">
-<msg time="2025-08-01T16:57:45.057697" level="INFO">채팅 버튼 가시성: True</msg>
-<msg time="2025-08-01T16:57:45.057832" level="INFO">${visible} = True</msg>
+<msg time="2025-08-13T17:10:21.337124" level="WARN">Element not found with locator: xpath=//android.view.View[@content-desc='chat button']</msg>
+<msg time="2025-08-13T17:10:21.951326" level="INFO">채팅 버튼 가시성: True</msg>
+<msg time="2025-08-13T17:10:21.952701" level="INFO">${visible} = True</msg>
 <var>${visible}</var>
 <doc>채팅 버튼 가시성 확인</doc>
-<status status="PASS" start="2025-08-01T16:57:42.718907" elapsed="2.338943"/>
+<status status="PASS" start="2025-08-13T17:10:10.662632" elapsed="11.290143"/>
 </kw>
 <return>
 <value>${visible}</value>
-<status status="PASS" start="2025-08-01T16:57:45.057900" elapsed="0.000041"/>
+<status status="PASS" start="2025-08-13T17:10:21.953191" elapsed="0.000321"/>
 </return>
-<msg time="2025-08-01T16:57:45.058032" level="INFO">${visible} = True</msg>
+<msg time="2025-08-13T17:10:21.954032" level="INFO">${visible} = True</msg>
 <var>${visible}</var>
-<status status="PASS" start="2025-08-01T16:57:42.718621" elapsed="2.339427"/>
+<status status="PASS" start="2025-08-13T17:10:10.661877" elapsed="11.292209"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${visible}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-08-01T16:57:45.058187" elapsed="0.000146"/>
+<status status="PASS" start="2025-08-13T17:10:21.955496" elapsed="0.000582"/>
 </kw>
 <kw name="Close App" owner="live_access" type="TEARDOWN">
 <kw name="Quit App" owner="Keyword">
-<msg time="2025-08-01T16:57:45.480246" level="INFO">Appium 드라이버 종료 성공</msg>
+<msg time="2025-08-13T17:10:22.701812" level="INFO">Appium 드라이버 종료 성공</msg>
 <doc>Appium 드라이버 종료</doc>
-<status status="PASS" start="2025-08-01T16:57:45.058647" elapsed="0.421823"/>
+<status status="PASS" start="2025-08-13T17:10:21.957628" elapsed="0.744366"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:45.058495" elapsed="0.422117"/>
+<doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
+<status status="PASS" start="2025-08-13T17:10:21.956975" elapsed="0.745170"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:39.100096" elapsed="6.380699"/>
+<status status="PASS" start="2025-08-13T17:10:04.896352" elapsed="17.805962"/>
 </test>
 <test id="s1-t2" name="Check Heart Button Is Visible" line="12">
 <kw name="Initialize App" owner="live_access" type="SETUP">
 <kw name="Start App" owner="Keyword">
-<msg time="2025-08-01T16:57:48.908634" level="INFO">Appium 드라이버 시작 성공</msg>
+<msg time="2025-08-13T17:10:25.612765" level="INFO">Appium 드라이버 시작 성공</msg>
 <doc>Appium 드라이버 시작</doc>
-<status status="PASS" start="2025-08-01T16:57:45.482168" elapsed="3.426736"/>
+<status status="PASS" start="2025-08-13T17:10:22.704198" elapsed="2.908747"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:45.481805" elapsed="3.427310"/>
+<doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
+<status status="PASS" start="2025-08-13T17:10:22.703857" elapsed="2.909234"/>
 </kw>
 <kw name="Check Heart Button" owner="live_access">
 <kw name="Is Heart Button Visible" owner="Keyword">
-<msg time="2025-08-01T16:57:51.015161" level="INFO">하트 버튼 가시성: True</msg>
-<msg time="2025-08-01T16:57:51.015675" level="INFO">${visible} = True</msg>
+<msg time="2025-08-13T17:10:26.260835" level="INFO">하트 버튼 가시성: True</msg>
+<msg time="2025-08-13T17:10:26.261181" level="INFO">${visible} = True</msg>
 <var>${visible}</var>
 <doc>하트 버튼 가시성 확인</doc>
-<status status="PASS" start="2025-08-01T16:57:48.910312" elapsed="2.105452"/>
+<status status="PASS" start="2025-08-13T17:10:25.613924" elapsed="0.647325"/>
 </kw>
 <return>
 <value>${visible}</value>
-<status status="PASS" start="2025-08-01T16:57:51.015968" elapsed="0.000163"/>
+<status status="PASS" start="2025-08-13T17:10:26.261404" elapsed="0.000114"/>
 </return>
-<msg time="2025-08-01T16:57:51.016544" level="INFO">${visible} = True</msg>
+<msg time="2025-08-13T17:10:26.261883" level="INFO">${visible} = True</msg>
 <var>${visible}</var>
-<status status="PASS" start="2025-08-01T16:57:48.909737" elapsed="2.106859"/>
+<status status="PASS" start="2025-08-13T17:10:25.613549" elapsed="0.648394"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${visible}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-08-01T16:57:51.016980" elapsed="0.000362"/>
+<status status="PASS" start="2025-08-13T17:10:26.262338" elapsed="0.000382"/>
 </kw>
 <kw name="Close App" owner="live_access" type="TEARDOWN">
 <kw name="Quit App" owner="Keyword">
-<msg time="2025-08-01T16:57:51.552137" level="INFO">Appium 드라이버 종료 성공</msg>
+<msg time="2025-08-13T17:10:26.458671" level="INFO">Appium 드라이버 종료 성공</msg>
 <doc>Appium 드라이버 종료</doc>
-<status status="PASS" start="2025-08-01T16:57:51.018297" elapsed="0.534115"/>
+<status status="PASS" start="2025-08-13T17:10:26.263390" elapsed="0.195395"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:51.017839" elapsed="0.534752"/>
+<doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
+<status status="PASS" start="2025-08-13T17:10:26.263051" elapsed="0.195817"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:45.481198" elapsed="6.071598"/>
+<status status="PASS" start="2025-08-13T17:10:22.702889" elapsed="3.756077"/>
 </test>
 <test id="s1-t3" name="Click Heart Button If Visible" line="16">
 <kw name="Initialize App" owner="live_access" type="SETUP">
 <kw name="Start App" owner="Keyword">
-<msg time="2025-08-01T16:57:54.955896" level="INFO">Appium 드라이버 시작 성공</msg>
+<msg time="2025-08-13T17:10:26.831549" level="ERROR">Appium 드라이버 시작 실패: Execution terminated by signal</msg>
 <doc>Appium 드라이버 시작</doc>
-<status status="PASS" start="2025-08-01T16:57:51.554528" elapsed="3.401606"/>
+<status status="PASS" start="2025-08-13T17:10:26.460421" elapsed="0.371268"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:51.554096" elapsed="3.402202"/>
+<doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
+<status status="PASS" start="2025-08-13T17:10:26.459856" elapsed="0.372070"/>
 </kw>
 <kw name="Check Heart Button" owner="live_access">
 <kw name="Is Heart Button Visible" owner="Keyword">
-<msg time="2025-08-01T16:57:57.108924" level="INFO">하트 버튼 가시성: True</msg>
-<msg time="2025-08-01T16:57:57.109417" level="INFO">${visible} = True</msg>
 <var>${visible}</var>
 <doc>하트 버튼 가시성 확인</doc>
-<status status="PASS" start="2025-08-01T16:57:54.957646" elapsed="2.151809"/>
+<status status="FAIL" start="2025-08-13T17:10:26.832309" elapsed="0.000052">Execution terminated by signal</status>
 </kw>
 <return>
 <value>${visible}</value>
-<status status="PASS" start="2025-08-01T16:57:57.109592" elapsed="0.000113"/>
+<status status="NOT RUN" start="2025-08-13T17:10:26.832397" elapsed="0.000014"/>
 </return>
-<msg time="2025-08-01T16:57:57.110019" level="INFO">${visible} = True</msg>
 <var>${visible}</var>
-<status status="PASS" start="2025-08-01T16:57:54.956960" elapsed="2.153095"/>
+<status status="FAIL" start="2025-08-13T17:10:26.832145" elapsed="0.000357">Execution terminated by signal</status>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
-<kw name="Click Heart Button" owner="live_access">
-<kw name="Click Heart Button" owner="Keyword">
-<msg time="2025-08-01T16:58:07.994051" level="INFO">하트 버튼 클릭 결과: True</msg>
-<msg time="2025-08-01T16:58:07.994509" level="INFO">${result} = True</msg>
-<var>${result}</var>
-<doc>하트 버튼 클릭</doc>
-<status status="PASS" start="2025-08-01T16:57:57.111505" elapsed="10.883077"/>
-</kw>
-<return>
-<value>${result}</value>
-<status status="PASS" start="2025-08-01T16:58:07.994700" elapsed="0.000086"/>
-</return>
-<status status="PASS" start="2025-08-01T16:57:57.111033" elapsed="10.884023"/>
-</kw>
 <arg>${visible}</arg>
 <arg>Click Heart Button</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-08-01T16:57:57.110552" elapsed="10.884585"/>
+<status status="NOT RUN" start="2025-08-13T17:10:26.832605" elapsed="0.000011"/>
 </kw>
 <kw name="Close App" owner="live_access" type="TEARDOWN">
 <kw name="Quit App" owner="Keyword">
-<msg time="2025-08-01T16:58:08.534758" level="INFO">Appium 드라이버 종료 성공</msg>
+<msg time="2025-08-13T17:10:26.832966" level="INFO">Appium 드라이버 종료 성공</msg>
 <doc>Appium 드라이버 종료</doc>
-<status status="PASS" start="2025-08-01T16:58:07.996843" elapsed="0.538133"/>
+<status status="PASS" start="2025-08-13T17:10:26.832913" elapsed="0.000078"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:58:07.995768" elapsed="0.539364"/>
+<doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
+<status status="PASS" start="2025-08-13T17:10:26.832750" elapsed="0.000266"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:57:51.553339" elapsed="16.982014"/>
+<status status="FAIL" start="2025-08-13T17:10:26.459234" elapsed="0.373814">Execution terminated by signal</status>
 </test>
-<status status="PASS" start="2025-08-01T16:57:38.992614" elapsed="29.544047"/>
+<status status="FAIL" start="2025-08-13T17:10:04.793844" elapsed="22.039684"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test" id="s1" pass="3" fail="0" skip="0">Test</stat>
+<stat name="Test" id="s1" pass="2" fail="1" skip="0">Test</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-08-13T17:10:21.337124" level="WARN">Element not found with locator: xpath=//android.view.View[@content-desc='chat button']</msg>
+<msg time="2025-08-13T17:10:26.831549" level="ERROR">Appium 드라이버 시작 실패: Execution terminated by signal</msg>
 </errors>
 </robot>
